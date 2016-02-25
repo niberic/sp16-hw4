@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   get "dogs", to: "dogs#index"
   get "dogs/new", to: "dogs#new"
-  get "dogs/:id", to: "dogs#show"
+  get "dogs/:id", to: "dogs#show", as: :dog   #Used for redirect_to
+  post "dogs", to: "dogs#create"  #Used for form_for
+  
 end
