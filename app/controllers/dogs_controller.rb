@@ -8,7 +8,8 @@ class DogsController < ApplicationController
   end
 
   def show
-    @dog = Dog.find(params[:id])
+    @id = params[:id]
+    @dog = Dog.find_by(id: params[:id])
   end
 
   def create

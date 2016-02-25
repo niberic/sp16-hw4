@@ -1,4 +1,9 @@
-<h1> Querying DB for Dog with ID:<%= @dog.id %> </h1>
+<h1> Querying DB for Dog with ID:<%= @id %> </h1>
 
-<%= "Name: " + @dog.name %>
-<%= "Age: " + @dog.age.to_s %>
+<% if @dog != nil %>
+  <%= "Name: " + @dog.name %>
+  <br>
+  <%= "Age: " + @dog.age.to_s %>
+<% else %>
+  <%= "Dog doesn't exist!" %>
+<% end %>
