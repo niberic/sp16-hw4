@@ -1,7 +1,10 @@
 class DogController < ApplicationController
-  def home
+  def index
     @dogs = Dog.all
   end
 
+  def new
+    
+  end
 
 end

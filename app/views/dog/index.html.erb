@@ -1,0 +1,7 @@
+<h1> Welcome to the Dog House! </h1>
+
+<% @dogs.each do |d| %>
+  <%= "Name: " + d.name %>
+  <%= " Age: " + d.age.to_s %>
+  <br>
+<% end %>

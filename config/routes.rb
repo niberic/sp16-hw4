@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   get "users/new", to: "users#new"
   get "users/:id", to: "users#show", as: :user
   post "users", to: "users#create"
+
+  get "dog", to: "dog#index"
+
 end
